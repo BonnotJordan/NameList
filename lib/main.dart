@@ -35,7 +35,9 @@ class _RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         title: Text("Startup Name Generator"),
       ),
-      body: _buildSuggestions(),
+      body: Container(
+        child: _buildSuggestions(),
+      )
     );
   }
 
